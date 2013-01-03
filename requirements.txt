@@ -1,0 +1,7 @@
+pymongo
+https://github.com/django-nonrel/djangotoolbox/tarball/master
+https://github.com/django-nonrel/django-nonrel/tarball/master
+git+https://github.com/django-nonrel/mongodb-engine
+django-piston==0.2.3
+django-registration==0.8
+python-dateutil==2.1

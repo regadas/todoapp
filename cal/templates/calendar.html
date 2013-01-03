@@ -1,0 +1,55 @@
+<div class="row">
+  <div id="calendar"></div>
+</div>
+
+<div class="modal hide" id="todo-form">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Add todo</h3>
+  </div>
+  <div class="modal-body">
+    <label>Title</label>
+    <input id="todo-title" type="text" />
+    <label>Start</label>
+    <input id="todo-add-start" type="text" />
+    <label>End</label>
+    <input id="todo-add-end" type="text" />
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a id="todo-add" href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+<div class="modal hide" id="todo-edit-form">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Add todo</h3>
+  </div>
+  <div class="modal-body">
+    <label>Title</label>
+    <input id="todo-edit-title" type="text" />
+    <label>Start</label>
+    <input id="todo-edit-start" type="text" />
+    <label>End</label>
+    <input id="todo-edit-end" type="text" />
+  </div>
+  <div class="modal-footer">
+    <a id="todo-delete" href="#" class="btn btn-danger">Delete</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a id="todo-edit" href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
+
+<div class="modal hide" id="share-calendar">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Add todo</h3>
+  </div>
+  <div class="modal-body">
+    <a href="{% url public user.get_profile.calendar.id %}">{% url public user.get_profile.calendar.id %}</a>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
